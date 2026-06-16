@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مركز الدعم والسياسات | ديشا ستور - Desha Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Cairo", sans-serif;
+        background-color: #0b0b0d;
+        color: #e4e4e7;
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8">
+    <div
+      class="max-w-4xl mx-auto bg-[#111115] rounded-3xl p-6 md:p-10 border border-[#1F1F24] shadow-2xl mt-4 md:mt-10"
+    >
+      <div class="text-center border-b border-[#1F1F24] pb-6 mb-8">
+        <h1 class="text-3xl font-bold text-[#ff6600] mb-2">
+          ديشا ستور | Desha Store
+        </h1>
+        <p class="text-sm text-zinc-400">
+          المركز القانوني الموحد لسياسات الاستخدام وحذف البيانات (تحديث 2026)
+        </p>
+      </div>
+
+      <div
+        class="flex flex-wrap gap-2 justify-center mb-8 bg-[#1B1B1E] p-2 rounded-2xl border border-[#2A2A30]"
+      >
+        <button
+          onclick="openTab('privacy')"
+          id="btn-privacy"
+          class="tab-btn px-4 py-2.5 rounded-xl font-bold text-sm transition-all bg-[#ff6600] text-white"
+        >
+          سياسة الخصوصية
+        </button>
+        <button
+          onclick="openTab('terms')"
+          id="btn-terms"
+          class="tab-btn px-4 py-2.5 rounded-xl font-bold text-sm transition-all text-zinc-400 hover:bg-[#ff6600]/10"
+        >
+          الشروط والأحكام
+        </button>
+        <button
+          onclick="openTab('refund')"
+          id="btn-refund"
+          class="tab-btn px-4 py-2.5 rounded-xl font-bold text-sm transition-all text-zinc-400 hover:bg-[#ff6600]/10"
+        >
+          سياسة الإلغاء والاسترجاع
+        </button>
+        <button
+          onclick="openTab('delete-data')"
+          id="btn-delete-data"
+          class="tab-btn px-4 py-2.5 rounded-xl font-bold text-sm transition-all text-zinc-400 hover:bg-[#ff6600]/10 border border-red-500/20 text-red-400"
+        >
+          طلب حذف الحساب (ويب)
+        </button>
+      </div>
+
+      <div class="space-y-6">
+        <div id="privacy" class="tab-content block space-y-4">
+          <h2 class="text-xl font-bold text-white flex items-center gap-2">
+            🛡️ سياسة خصوصية البيانات (Privacy Policy)
+          </h2>
+          <p class="text-zinc-300 leading-relaxed text-sm">
+            نحن في <b>ديشا ستور</b> نضع أمان وحماية بيانات المستخدمين في مقدمة
+            أولوياتنا. عند استخدامك للتطبيق، فإنك توافق صراحة على جمع البيانات
+            التالية لغرض تقديم الخدمة:
+          </p>
+
+          <div
+            class="bg-[#1B1B1E] p-4 rounded-2xl border border-zinc-800 space-y-3"
+          >
+            <p class="text-sm text-zinc-300 font-bold">
+              📌 البيانات التي يتم جمعها وغرضها:
+            </p>
+            <ul
+              class="list-disc list-inside text-zinc-400 text-sm space-y-2 mr-4"
+            >
+              <li>
+                <b>البيانات الحسابية:</b> نجمع الاسم، البريد الإلكتروني، ورقم
+                الهاتف لإنشاء الحساب وتأمين جلسة الدخول.
+              </li>
+              <li>
+                <b>حماية بيانات الاتصالات الحساسة:</b> لغرض شحن باقات الاتصالات
+                يدوياً وبناءً على طلب العميل الصريح، يطلب التطبيق من العميل
+                إدخال رقم الهاتف وباسوورد تطبيق الخدمة (مثل أنا فودافون).
+                <br />
+                <span class="text-[#ff6600] font-bold">⚠️ إقرار الأمان:</span>
+                هذه البيانات تُجمع وتُنقل بشكل مشفر بالكامل عبر بروتوكول آمن إلى
+                قواعد بيانات سيرفر Supabase المغلقة، ويتم استخدامها من قِبل
+                إدارة التطبيق فقط للقيام بخطوات الشحن والتأكيد نيابةً عن العميل.
+                نلتزم تماماً بعدم طباعة الباسوورد في أي فواتير عامة أو مستندات
+                مكشوفة، ولا يتم مشاركتها مطلقاً مع أي جهة خارجية، وتظل محمية
+                داخل خوادم السيرفر المؤمنة ضد أي تسريب.
+              </li>
+              <li>
+                <b>توثيق الدفع:</b> نجمع صور إيصالات تحويل الأموال والمحافظ
+                لتوثيق وتأكيد عمليات الشراء والتحويل المالي.
+              </li>
+            </ul>
+          </div>
+          <p class="text-zinc-400 text-sm">
+            نحن نتبع معايير الحماية والأمان العالمية لعام 2026، لضمان تشفير
+            بياناتك وسريتها التامة.
+          </p>
+        </div>
+
+        <div id="terms" class="tab-content hidden space-y-4">
+          <h2 class="text-xl font-bold text-white flex items-center gap-2">
+            📜 الشروط والأحكام (Terms of Service)
+          </h2>
+          <p class="text-zinc-300 leading-relaxed text-sm">
+            باستخدامك لتطبيق ديشا ستور، فإنك تلتزم بالشروط والأحكام التالية:
+          </p>
+          <ul
+            class="list-disc list-inside text-zinc-400 text-sm space-y-2 mr-4"
+          >
+            <li>
+              يتحمل المستخدم المسؤولية القانونية الكاملة عن صحة أرقام الهواتف
+              والباقات التي يطلب شحنها من خلال التطبيق.
+            </li>
+            <li>
+              يحظر تماماً استخدام التطبيق في أي عمليات احتيالية أو استخدام وسائل
+              دفع ومحافظ إلكترونية غير مملوكة قانوناً لصاحب الحساب.
+            </li>
+            <li>
+              للإدارة الحق الكامل في تعليق أو حظر أي حساب يثبت تلاعبه بأسعار
+              المنتجات أو محاولة استغلال النظام بشكل غير قانوني.
+            </li>
+          </ul>
+        </div>
+
+        <div id="refund" class="tab-content hidden space-y-4">
+          <h2 class="text-xl font-bold text-white flex items-center gap-2">
+            🔄 سياسة الإلغاء والاسترجاع (Refund Policy)
+          </h2>
+          <p class="text-zinc-300 leading-relaxed text-sm">
+            طبيعة الخدمات الرقمية وشحن الباقات الفورية تستلزم الشروط التالية
+            لعمليات الإلغاء أو رد الأموال:
+          </p>
+          <ul
+            class="list-disc list-inside text-zinc-400 text-sm space-y-2 mr-4"
+          >
+            <li>
+              <b>باقات الشحن الفوري والخدمات المنفذة:</b> لا يمكن إلغاء الطلب أو
+              استرجاع المبلغ بمجرد تحول حالة الطلب من قِبل الإدارة إلى "قيد
+              التنفيذ" أو "تم التنفيذ بنجاح".
+            </li>
+            <li>
+              <b>الطلبات المعلقة:</b> يحق للعميل طلب إلغاء الأوردر واسترداد
+              الأموال كاملة طالما أن حالة الطلب لا تزال "معلق" أو "تحت
+              المراجعة".
+            </li>
+            <li>
+              يتم رد المبالغ المستحقة المقبولة إلغاؤها على نفس المحفظة
+              الإلكترونية التي تم التحويل منها خلال 24 ساعة عمل من تاريخ
+              الموافقة على الإلغاء.
+            </li>
+          </ul>
+        </div>
+
+        <div id="delete-data" class="tab-content hidden space-y-4">
+          <h2 class="text-xl font-bold text-red-400 flex items-center gap-2">
+            🗑️ طلب حذف الحساب والبيانات نهائياً (Data Deletion)
+          </h2>
+          <p class="text-zinc-300 text-sm leading-relaxed mb-2">
+            بناءً على سياسات جوجل بلاي، يمكنك تقديم طلب حذف فوري لكافة بياناتك.
+            سيتم إرسال هذا الطلب مباشرة إلى إدارة التطبيق عبر البريد الإلكتروني
+            الرسمي للمراجعة والتنفيذ الفوري:
+          </p>
+
+          <form
+            action="https://formsubmit.co/tarekadnanhegazy@GMAIL.COM"
+            method="POST"
+            class="bg-[#1B1B1E] p-4 rounded-2xl border border-red-500/10 space-y-3"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://desha-store.netlify.app/#delete-data"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="🚨 طلب حذف حساب جديد من عميل ديشا ستور!"
+            />
+
+            <div>
+              <label class="block text-xs text-zinc-400 mb-1 font-bold"
+                >البريد الإلكتروني المراد حذفه من التطبيق:</label
+              >
+              <input
+                type="email"
+                name="البريد الإلكتروني للعميل"
+                required
+                placeholder="example@email.com"
+                class="w-full bg-[#0B0B0D] border border-[#2A2A30] rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-[#ff6600]"
+              />
+            </div>
+            <div>
+              <label class="block text-xs text-zinc-400 mb-1 font-bold"
+                >رقم الهاتف المسجل بالتطبيق:</label
+              >
+              <input
+                type="tel"
+                name="رقم هاتف العميل"
+                required
+                placeholder="01XXXXXXXXX"
+                class="w-full bg-[#0B0B0D] border border-[#2A2A30] rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-[#ff6600]"
+              />
+            </div>
+            <div class="flex items-start gap-2 pt-1">
+              <input type="checkbox" id="del-confirm" required class="mt-1" />
+              <label for="del-confirm" class="text-xs text-zinc-400"
+                >أوافق على حذف كافة سجلات الشراء، الكوبونات، وعناوين الشحن
+                الخاصة بي نهائياً من سيرفرات ديشا ستور.</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-xl text-sm transition-all shadow-lg shadow-red-600/10"
+            >
+              تأكيد وإرسال طلب الحذف للإدارة
+            </button>
+          </form>
+
+          <p class="text-center text-xs text-zinc-500 mt-2">
+            البريد الإلكتروني المخصص للدعم القانوني والتواصل:
+            <span class="text-zinc-400 font-bold"
+              >tarekadnanhegazy@GMAIL.COM</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openTab(tabId) {
+        document.querySelectorAll(".tab-content").forEach((el) => {
+          el.classList.add("hidden");
+          el.classList.remove("block");
+        });
+        const targetContent = document.getElementById(tabId);
+        if (targetContent) {
+          targetContent.classList.remove("hidden");
+          targetContent.classList.add("block");
+        }
+
+        document.querySelectorAll(".tab-btn").forEach((btn) => {
+          btn.classList.remove("bg-[#ff6600]", "text-white");
+          btn.classList.add("text-zinc-400", "hover:bg-[#ff6600]/10");
+        });
+        const targetBtn = document.getElementById("btn-" + tabId);
+        if (targetBtn) {
+          targetBtn.classList.remove("text-zinc-400", "hover:bg-[#ff6600]/10");
+          targetBtn.append;
+          targetBtn.classList.add("bg-[#ff6600]", "text-white");
+        }
+      }
+
+      // ⚡ الـ Hash Listener الذكي لفتح الـ Tab المناسبة مباشرة عند قفزة التطبيق
+      window.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash.replace("#", "");
+        if (hash && document.getElementById(hash)) {
+          openTab(hash);
+        }
+      });
+    </script>
+  </body>
+</html>
